@@ -1,0 +1,58 @@
+.user-layout-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; 
+  overflow: auto;
+  background: #f8f8f8;   
+}
+
+.user-layout-content {
+  padding: 32px 0;
+  flex: 1;
+}
+
+@media (min-width: 768px){
+  .user-layout-container {
+    background-image: url('../assets/ba-background.svg');
+    background-repeat: no-repeat;
+    background-position: center 0px;
+    background-size: 100%;
+  }
+
+  .user-layout-content {
+    padding: 112px 0 24px;
+  }
+}
+
+.user-layout-top {
+  text-align: center;    
+}
+
+.user-layout-header {
+  height: 44px;
+  line-height: 44px;
+}
+.user-layout-header > a {
+  text-decoration: none;
+}
+
+.user-layout-logo {
+  height: 44px;
+  margin-right: 16px;
+  vertical-align: top;
+}
+
+.user-layout-title {
+  font-size: 30px;
+  color: rgb(45, 45, 45);
+  font-weight: 500;
+  position: relative;
+  font-family: 'Myriad Pro', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
+
+.user-layout-desc {
+  margin-top: 12px;
+  font-size: 14px;
+  font-weight: 300;
+  color: #8d8d8d;
+}

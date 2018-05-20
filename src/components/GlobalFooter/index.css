@@ -1,0 +1,18 @@
+.footer {
+  padding: 0 16px;
+  margin: 48px 0 24px 0;
+  text-align: center;
+} 
+
+.footer .footer-links {
+
+}
+
+.footer .footer-copyright {
+  color: #8d8d8d;
+  font-size: 12px;
+}
+
+.footer-copyright .iconfont{
+  font-size: 12px;
+}

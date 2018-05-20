@@ -1,0 +1,200 @@
+.logo {
+  height: 65px;
+  position: relative;
+  line-height: 64px;
+  padding-left: 40px;
+  border-bottom: 1px solid rgba(237, 237, 237, 1);
+  -webkit-transition: all .3s;
+          transition: all .3s;
+  background: #ffffff;
+  overflow: hidden;
+}
+
+.logo img, .logo h1{
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.logo img {
+  height: 18px;
+
+}
+
+.logo h1 {
+  color: rgb(45, 45, 45);
+  font-size: 16px;
+  margin: 0 0 0 6px;
+  font-weight: 500;
+}
+
+.sider-shadow {
+  min-height: 100vh;
+  -webkit-box-shadow: 1px 1px 10px 0 rgba(0,0,0,.1);
+          box-shadow: 1px 1px 10px 0 rgba(0,0,0,.1);
+  position: relative;
+  z-index: 10;
+}
+
+.collapse-bar {
+  display: inline-block;
+  margin-left: 30px;
+  cursor: pointer;
+}
+.collapse-bar img {
+  height: 14px;
+  padding: 0 10px;
+}
+.ant-layout-sider-collapsed .logo {
+  padding: 0 24px;
+  text-align: center;
+}
+.ant-layout-sider-collapsed .logo > a {
+  display: none;
+}
+.ant-layout-sider-collapsed .logo > .collapse-bar {
+  margin: 0;
+}
+
+.ant-menu-item .iconfont,
+.ant-menu-submenu-title .iconfont {
+  min-width: 14px;
+  margin: 0 28px 0 18px;
+  -webkit-transition: font-size .15s cubic-bezier(.215,.61,.355,1);
+  transition: font-size .15s cubic-bezier(.215,.61,.355,1);
+  font-size: 15px;
+  vertical-align: middle;
+  height: 18px;
+}
+
+.ant-menu-inline-collapsed > .ant-menu-item,
+.ant-menu-inline-collapsed > .ant-menu-item-group > .ant-menu-item-group-list > .ant-menu-item,
+.ant-menu-inline-collapsed > .ant-menu-submenu > .ant-menu-submenu-title {
+  text-align: center;
+}
+
+.ant-menu-inline-collapsed > .ant-menu-item .iconfont,
+.ant-menu-inline-collapsed > .ant-menu-item-group > .ant-menu-item-group-list > .ant-menu-item .iconfont,
+.ant-menu-inline-collapsed > .ant-menu-submenu > .ant-menu-submenu-title .iconfont {
+  margin: 0;
+}
+.ant-menu-inline-collapsed > .ant-menu-item .iconfont + span,
+.ant-menu-inline-collapsed > .ant-menu-item-group > .ant-menu-item-group-list > .ant-menu-item .iconfont + span,
+.ant-menu-inline-collapsed > .ant-menu-submenu > .ant-menu-submenu-title .iconfont + span {
+  max-width: 0;
+  display: inline-block;
+  opacity: 0;
+}
+
+.ba-menu--custom.ant-menu {
+  color: #8d8d8d;
+}
+
+.ba-menu--custom .ant-menu-item:active,
+.ba-menu--custom .ant-menu-submenu-title:active {
+  background: #f0f0f0;
+}
+
+.ba-menu--custom .ant-menu-item > a {
+  color: #8d8d8d;
+}
+
+.ba-menu--custom .ant-menu-item > a:hover {
+  color: rgba(0, 0, 0, 0.65);
+}
+
+.ba-menu--custom .ant-menu-item:hover,
+.ba-menu--custom .ant-menu-item-active,
+.ba-menu--custom.ant-menu:not(.ant-menu-inline) .ant-menu-submenu-open,
+.ba-menu--custom .ant-menu-submenu-active,
+.ba-menu--custom .ant-menu-submenu-title:hover {
+  color: rgba(0, 0, 0, 0.65);
+}
+
+.ba-menu--custom .ant-menu-item-selected {
+  color: rgba(0, 0, 0, 0.65);
+}
+.ba-menu--custom .ant-menu-item-selected > a,
+.ba-menu--custom .ant-menu-item-selected > a:hover {
+  color: rgba(0, 0, 0, 0.65);
+}
+.ba-menu--custom.ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected,
+.ba-menu--custom.ant-menu-submenu-popup .ant-menu-item-selected{
+  background-color: #f0f0f0;
+}
+
+.ba-menu--custom.ant-menu-inline,
+.ba-menu--custom.ant-menu-vertical,
+.ba-menu--custom.ant-menu-vertical-left {
+  border-right: 0;
+}
+.ba-menu--custom.ant-menu-vertical-right {
+  border-left: 0;
+}
+
+.ba-menu--custom .ant-menu-submenu-vertical > .ant-menu-submenu-title .ant-menu-submenu-arrow:before,
+.ba-menu--custom .ant-menu-submenu-vertical-left > .ant-menu-submenu-title .ant-menu-submenu-arrow:before,
+.ba-menu--custom .ant-menu-submenu-vertical-right > .ant-menu-submenu-title .ant-menu-submenu-arrow:before,
+.ba-menu--custom .ant-menu-submenu-inline > .ant-menu-submenu-title .ant-menu-submenu-arrow:before,
+.ba-menu--custom .ant-menu-submenu-vertical > .ant-menu-submenu-title .ant-menu-submenu-arrow:after,
+.ba-menu--custom .ant-menu-submenu-vertical-left > .ant-menu-submenu-title .ant-menu-submenu-arrow:after,
+.ba-menu--custom .ant-menu-submenu-vertical-right > .ant-menu-submenu-title .ant-menu-submenu-arrow:after,
+.ba-menu--custom .ant-menu-submenu-inline > .ant-menu-submenu-title .ant-menu-submenu-arrow:after {
+  background-image: -webkit-gradient(linear, left top, right top, from(#8d8d8d), to(#8d8d8d));
+  background-image: -webkit-linear-gradient(left, #8d8d8d, #8d8d8d);
+  background-image: linear-gradient(to right, #8d8d8d, #8d8d8d);
+}
+
+.ba-menu--custom .ant-menu-submenu-vertical > .ant-menu-submenu-title:hover .ant-menu-submenu-arrow:after,
+.ba-menu--custom .ant-menu-submenu-vertical-left > .ant-menu-submenu-title:hover .ant-menu-submenu-arrow:after,
+.ba-menu--custom .ant-menu-submenu-vertical-right > .ant-menu-submenu-title:hover .ant-menu-submenu-arrow:after,
+.ba-menu--custom .ant-menu-submenu-inline > .ant-menu-submenu-title:hover .ant-menu-submenu-arrow:after,
+.ba-menu--custom .ant-menu-submenu-vertical > .ant-menu-submenu-title:hover .ant-menu-submenu-arrow:before,
+.ba-menu--custom .ant-menu-submenu-vertical-left > .ant-menu-submenu-title:hover .ant-menu-submenu-arrow:before,
+.ba-menu--custom .ant-menu-submenu-vertical-right > .ant-menu-submenu-title:hover .ant-menu-submenu-arrow:before,
+.ba-menu--custom .ant-menu-submenu-inline > .ant-menu-submenu-title:hover .ant-menu-submenu-arrow:before {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.65)), to(rgba(0, 0, 0, 0.65)));
+  background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65));
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65));
+}
+
+.ba-menu--custom.ant-menu-vertical .ant-menu-submenu-selected,
+.ba-menu--custom.ant-menu-vertical-left .ant-menu-submenu-selected,
+.ba-menu--custom.ant-menu-vertical-right .ant-menu-submenu-selected {
+  color: rgba(0, 0, 0, 0.65);
+}
+.ba-menu--custom.ant-menu-vertical .ant-menu-submenu-selected > a,
+.ba-menu--custom.ant-menu-vertical-left .ant-menu-submenu-selected > a,
+.ba-menu--custom.ant-menu-vertical-right .ant-menu-submenu-selected > a {
+  color: rgba(0, 0, 0, 0.65);
+}
+
+.ba-menu--custom.ant-menu-vertical .ant-menu-item:after,
+.ba-menu--custom.ant-menu-vertical-left .ant-menu-item:after,
+.ba-menu--custom.ant-menu-vertical-right .ant-menu-item:after,
+.ba-menu--custom.ant-menu-inline .ant-menu-item:after {
+  display: none;
+}
+
+.ba-menu--custom.ant-menu-vertical .ant-menu-item,
+.ba-menu--custom.ant-menu-vertical-left .ant-menu-item,
+.ba-menu--custom.ant-menu-vertical-right .ant-menu-item,
+.ba-menu--custom.ant-menu-inline .ant-menu-item,
+.ba-menu--custom.ant-menu-vertical .ant-menu-submenu-title,
+.ba-menu--custom.ant-menu-vertical-left .ant-menu-submenu-title,
+.ba-menu--custom.ant-menu-vertical-right .ant-menu-submenu-title,
+.ba-menu--custom.ant-menu-inline .ant-menu-submenu-title,
+.ba-menu--custom.ant-menu-submenu-popup .ant-menu-item {
+  font-size: 13px;
+}
+
+.ba-menu--custom.ant-menu-inline .ant-menu-item,
+.ba-menu--custom.ant-menu-inline .ant-menu-submenu-title {
+  /*width: calc(100% + 1px);*/
+  width: 100%;
+}
+
+.ba-menu--custom .ant-menu-item,
+.ba-menu--custom .ant-menu-submenu-title {
+  -webkit-transition: color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1), border-color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1), background 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1), border-color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1), background 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}

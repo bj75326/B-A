@@ -1,0 +1,122 @@
+.header {
+  height: 64px;
+  padding: 0 12px 0 0;
+  background-color: #fff;
+  position: relative;
+  box-shadow: 0 1px 10px 0 rgba(0,0,0,.1);
+}
+
+.header-logo {
+  height: 64px;
+  padding: 0 12px 0 24px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.header-logo img {
+  width: 26px;
+}
+
+.header-collapse-bar {
+  padding: 0 12px;
+  display: inline-block;
+}
+
+.header-collapse-bar > img {
+  height: 14px;
+}
+
+.header-left {
+  float: left;
+  height: 100%;
+}
+
+.header-left.header-left-mobile {
+  position: absolute;
+  right: 102px;
+  top: 0px;
+}
+
+.header-right {
+  float: right;
+  height: 100%;
+  display: -webkit-flex;
+  display: flex;
+}
+
+.header-right-mobile .header-name{
+  display: none;
+}
+
+.header-account {
+  cursor: pointer;
+  margin: 0 24px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  height: 100%;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+}
+
+.header-avatar {
+  margin-right: 10px;
+  box-shadow: 0 0 0 0px #fff,
+              0 0 0 3px #dfdfdf;
+}
+
+.header-name {
+  color: #909090;
+  font-size: 13px;
+}
+
+.header-name > .iconfont {
+  font-size: 13px;
+  margin-left: 5px;
+}
+
+/*dropdown*/
+.ba-dropdown--custom.ant-dropdown {
+  font-size: 13px;
+  color: #909090;
+}
+
+.ba-dropdown--custom.ant-dropdown .ant-dropdown-menu {
+  border-radius: 2px;
+}
+
+.ba-dropdown--custom.ant-dropdown .ant-dropdown-menu-item,
+.ba-dropdown--custom.ant-dropdown .ant-dropdown-menu-submenu-title {
+  padding: 10px 26px;
+  font-size: 12px;
+  color: #909090;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+}
+
+.ba-dropdown--custom.ant-dropdown .iconfont {
+  font-size: 14px;
+  margin-right: 14px;
+}
+
+.ba-dropdown--custom.ant-dropdown .ant-dropdown-menu-item:hover,
+.ba-dropdown--custom.ant-dropdown .ant-dropdown-menu-submenu-title:hover {
+  color: rgba(0, 0, 0, .65);
+  background-color: #fff;
+}
+/*dropdown*/
+
+.header-right-mobile .header-account{
+  margin: 0;
+  padding-left: 12px;
+}
+
+.header-account-dropdown {
+  width: 121px;
+}
+
+.header-account-spin {
+  display: flex;
+  align-items: center;  
+}

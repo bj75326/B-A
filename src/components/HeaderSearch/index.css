@@ -1,0 +1,40 @@
+.header-search {
+  cursor: pointer;
+  padding: 0 0 0 60px;
+  margin: 0;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  transition: all .3s;
+  height: 100%;
+  background: #fff;
+}
+
+.header-search .iconfont.icon-search {
+  cursor: pointer;
+  font-size: 18px;
+  color: #8d8d8d;
+}
+
+.header-search .ant-select-auto-complete {
+  width: 210px;
+  margin-left: 10px;
+  transition: width .3s;
+}
+
+.header-left.header-left-mobile .header-search .ant-select-auto-complete {
+  width: 0;
+}
+
+.header-left.header-left-mobile .header-search.header-search-show .ant-select-auto-complete {
+  width: 210px;
+}
+
+.header-search input{
+  background: transparent;
+  border: 0;
+  padding-left: 0;
+  padding-right: 0;
+  box-shadow: none !important;
+  font-size: 13px !important;
+}

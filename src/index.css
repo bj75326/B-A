@@ -1,0 +1,53 @@
+/*custom*/
+body {
+  height: 100%;
+  overflow-y: hidden;
+}
+
+#root {
+  height: 100%;
+}
+
+.iconfont {
+  display: inline-block;
+  font-style: normal;
+  vertical-align: baseline;
+  text-align: center;
+  text-transform: none;
+  line-height: 1;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/*layout*/
+.ba-layout--custom.ant-layout {
+  min-height: 100%;
+  background: #f8f8f8;
+}
+.ba-layout--custom.ant-layout .ant-layout-header,
+.ba-layout--custom.ant-layout .ant-layout-footer,
+.ba-layout--custom.ant-layout .ant-layout-sider
+{
+  background: #fff;
+}
+/*layout*/
+
+/*tabs*/
+.ba-tabs--custom .ant-tabs-nav .ant-tabs-tab {
+  color: #8d8d8d;  
+  font-weight: 400;
+}
+
+.ba-tabs--custom .ant-tabs-nav .ant-tabs-tab:hover {
+  color: #40a9ff;
+}
+.ba-tabs--custom .ant-tabs-nav .ant-tabs-tab:active {
+  color: #096dd9;
+}
+
+.ba-tabs--custom .ant-tabs-nav .ant-tabs-tab-active {
+  color: #1890ff;
+  font-weight: 500;
+}
+/*tabs*/

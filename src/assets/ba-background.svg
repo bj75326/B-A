@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1490px" height="754px" viewBox="0 0 1490 754" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>ba-background</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="1028" y="197" width="20" height="20"></rect>
+        <rect id="path-2" x="1294" y="503" width="20" height="20"></rect>
+        <path d="M1087.66713,427 L1134,446.667135 L1114.33287,493 L1068,473.332865 L1087.66713,427 Z M1093.00028,440.2 L1081.2,467.999719 L1108.99972,479.8 L1120.8,452.000281 L1093.00028,440.2 Z" id="path-3"></path>
+        <path d="M313.939607,674 L335,682.939607 L326.060393,704 L305,695.060393 L313.939607,674 Z M317.575843,683 L314,691.424157 L322.424157,695 L326,686.575843 L317.575843,683 Z" id="path-4"></path>
+        <rect id="path-5" x="148" y="93" width="20" height="20"></rect>
+        <rect id="path-6" x="345" y="51" width="20" height="20"></rect>
+    </defs>
+    <g id="ba-background" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <polygon id="Triangle" stroke-opacity="0" stroke="#F8F8F8" fill="#FF8490" transform="translate(312.500000, 199.500000) rotate(24.000000) translate(-312.500000, -199.500000) " points="312.5 189 325 210 300 210"></polygon>
+        <path d="M288,352 C265.90861,352 248,334.09139 248,312 C248,289.90861 265.90861,272 288,272 C310.09139,272 328,289.90861 328,312 C328,334.09139 310.09139,352 288,352 Z M288,337 C301.807119,337 313,325.807119 313,312 C313,298.192881 301.807119,287 288,287 C274.192881,287 263,298.192881 263,312 C263,325.807119 274.192881,337 288,337 Z" id="Combined-Shape" stroke-opacity="0" stroke="#F8F8F8" fill="#F8E4D1"></path>
+        <g id="Rectangle" transform="translate(1038.000000, 207.000000) rotate(14.000000) translate(-1038.000000, -207.000000) ">
+            <use fill="#BCDEDE" fill-rule="evenodd" xlink:href="#path-1"></use>
+            <rect stroke-opacity="0" stroke="#F8F8F8" stroke-width="1" x="1028.5" y="197.5" width="19" height="19"></rect>
+        </g>
+        <g id="Rectangle" transform="translate(1304.000000, 513.000000) rotate(56.000000) translate(-1304.000000, -513.000000) ">
+            <use fill="#FADCEB" fill-rule="evenodd" xlink:href="#path-2"></use>
+            <rect stroke-opacity="0" stroke="#F8F8F8" stroke-width="1" x="1294.5" y="503.5" width="19" height="19"></rect>
+        </g>
+        <g id="Combined-Shape">
+            <use fill="#F8E4D1" fill-rule="evenodd" xlink:href="#path-3"></use>
+            <path stroke-opacity="0" stroke="#F8F8F8" stroke-width="1" d="M1087.93202,427.655618 L1068.65562,473.067979 L1114.06798,492.344382 L1133.34438,446.932021 L1087.93202,427.655618 Z M1092.73539,439.544382 L1121.45562,451.735394 L1109.26461,480.455618 L1080.54438,468.264606 L1092.73539,439.544382 Z"></path>
+        </g>
+        <path d="M97,654 C58.3400675,654 27,622.659932 27,584 C27,545.340068 58.3400675,514 97,514 C135.659932,514 167,545.340068 167,584 C167,622.659932 135.659932,654 97,654 Z M96.5,628 C120.524387,628 140,608.300529 140,584 C140,559.699471 120.524387,540 96.5,540 C72.4756134,540 53,559.699471 53,584 C53,608.300529 72.4756134,628 96.5,628 Z" id="Combined-Shape" stroke-opacity="0" stroke="#F8F8F8" fill="#FDF7CB"></path>
+        <polygon id="Triangle" stroke-opacity="0" stroke="#F8F8F8" fill="#9BCBA3" points="1089 577 1113 582.100919 1096.25092 602"></polygon>
+        <polygon id="Triangle" stroke-opacity="0" stroke="#F8F8F8" fill="#E4AE56" transform="translate(337.500000, 562.500000) rotate(24.000000) translate(-337.500000, -562.500000) " points="337.5 552 350 573 325 573"></polygon>
+        <polygon id="Triangle" stroke-opacity="0" stroke="#F8F8F8" fill="#FF8490" transform="translate(974.500000, 645.000000) rotate(-55.000000) translate(-974.500000, -645.000000) " points="983.101818 633 986 657 963 646.944152"></polygon>
+        <polygon id="Triangle" stroke-opacity="0" stroke="#F8F8F8" fill="#B185CD" points="1205.66274 367 1220 388.624055 1195 391"></polygon>
+        <path d="M1340,302 C1259.91871,302 1195,237.081289 1195,157 C1195,76.9187113 1259.91871,12 1340,12 C1420.08129,12 1485,76.9187113 1485,157 C1485,237.081289 1420.08129,302 1340,302 Z M1340,257 C1395.22847,257 1440,212.228475 1440,157 C1440,101.771525 1395.22847,57 1340,57 C1284.77153,57 1240,101.771525 1240,157 C1240,212.228475 1284.77153,257 1340,257 Z" id="Combined-Shape" stroke-opacity="0" stroke="#F8F8F8" fill="#D8EDEB"></path>
+        <path d="M1252,713 C1229.90861,713 1212,695.09139 1212,673 C1212,650.90861 1229.90861,633 1252,633 C1274.09139,633 1292,650.90861 1292,673 C1292,695.09139 1274.09139,713 1252,713 Z M1252,698 C1265.80712,698 1277,686.807119 1277,673 C1277,659.192881 1265.80712,648 1252,648 C1238.19288,648 1227,659.192881 1227,673 C1227,686.807119 1238.19288,698 1252,698 Z" id="Combined-Shape" stroke-opacity="0" stroke="#F8F8F8" fill="#FADCEB"></path>
+        <g id="Combined-Shape" transform="translate(320.000000, 689.000000) rotate(-69.000000) translate(-320.000000, -689.000000) ">
+            <use fill="#D8D8D8" fill-rule="evenodd" xlink:href="#path-4"></use>
+            <path stroke-opacity="0" stroke="#F8F8F8" stroke-width="1" d="M314.204493,674.655618 L305.655618,694.795507 L325.795507,703.344382 L334.344382,683.204493 L314.204493,674.655618 Z M317.310956,682.344382 L326.655618,686.310956 L322.689044,695.655618 L313.344382,691.689044 L317.310956,682.344382 Z"></path>
+        </g>
+        <polygon id="Triangle" stroke-opacity="0" stroke="#F8F8F8" fill="#B185CD" points="1205.66274 367 1220 388.624055 1195 391"></polygon>
+        <polygon id="Triangle" stroke-opacity="0" stroke="#F8F8F8" fill="#B185CD" transform="translate(473.500000, 310.000000) rotate(69.000000) translate(-473.500000, -310.000000) " points="471.662738 298 486 319.624055 461 322"></polygon>
+        <polygon id="Triangle" stroke-opacity="0" stroke="#F8F8F8" fill="#FADCEB" transform="translate(208.500000, 453.000000) rotate(-264.000000) translate(-208.500000, -453.000000) " points="206.662738 441 221 462.624055 196 465"></polygon>
+        <g id="Rectangle" transform="translate(158.000000, 103.000000) rotate(14.000000) translate(-158.000000, -103.000000) ">
+            <use fill="#BCDEDE" fill-rule="evenodd" xlink:href="#path-5"></use>
+            <rect stroke-opacity="0.000537817029" stroke="#F8F8F8" stroke-width="1" x="148.5" y="93.5" width="19" height="19"></rect>
+        </g>
+        <g id="Rectangle" transform="translate(355.000000, 61.000000) rotate(51.000000) translate(-355.000000, -61.000000) ">
+            <use fill="#FADCEB" fill-rule="evenodd" xlink:href="#path-6"></use>
+            <rect stroke-opacity="0" stroke="#F8F8F8" stroke-width="1" x="345.5" y="51.5" width="19" height="19"></rect>
+        </g>
+    </g>
+</svg>
