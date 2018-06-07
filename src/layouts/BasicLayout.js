@@ -17,9 +17,14 @@ import DocumentTitle from 'react-document-title';
 import {ContainerQuery} from 'react-container-query';
 import GlobalHeader from '../components/GlobalHeader';
 import GlobalFooter from '../components/GlobalFooter';
+import {getRoutes} from '../utils/utils';
+
+import './BasicLayout.css';
 
 const {Content, Header, Footer} = Layout;
 const {AuthorizedRoute} = Authorized;
+
+const copyright = <Fragment>BinAdmin <i className="iconfont icon-copyright"/> 2018 Bill Ji</Fragment>;
 
 //重定向配置
 const getRedirect = items => {
@@ -81,13 +86,17 @@ class BasicLayout extends React.PureComponent {
   static childContextTypes = {
     location: PropTypes.object,
     breadcrumbNameMap: PropTypes.object,
+    isMobile: PropTypes.bool,
   };
 
   getChildContext(){
     const {location, routerData} = this.props;
+    //在basic layout的上下文中添加isMobile，供子级路由下的页面做响应式（暂时）
+    const {isMobile} = this.state;
     return {
       location,
       breadcrumbNameMap: routerData,
+      isMobile,
     };
   }
 
@@ -111,8 +120,9 @@ class BasicLayout extends React.PureComponent {
       urlParams.searchParams.delete('redirect');
       //这里会不会触发history的subscribe？
       window.history.replaceState(null, 'redirect', urlParams.href);
+      console.log('replaceState complete');
     }else{
-      return '/dashboard';
+      return '/task';
     }
     return redirect;
   }
@@ -156,7 +166,13 @@ class BasicLayout extends React.PureComponent {
   }
 
   getPageTitle(){
-
+    const {routerData, location} = this.props;
+    const {pathname} = location;
+    let title = 'B/A';
+    if(routerData[pathname] && routerData[pathname].name){
+      title = `${routerData[pathname].name} - B/A`;
+    }
+    return title;
   }
 
   render(){
@@ -165,6 +181,11 @@ class BasicLayout extends React.PureComponent {
       currentUser, collapsed, fetchingNotices, notices, routerData, match, location
     } = this.props;
     const bashRedirect = this.getBashRedirect();
+    const contentCls = classNames({
+      ["basic-layout-content"]: true,
+      ["basic-layout-content-collapsed"]: collapsed,
+    });
+
     const layout = (
       <Layout className="ba-layout--custom">
         <SiderMenu
@@ -177,7 +198,7 @@ class BasicLayout extends React.PureComponent {
           onCollapse={this.handleMenuCollapse}
           collapsedWidth={88}
         />
-        <Layout style={{height: '100vh', overflowY: 'scroll'}}>
+        <Layout style={{height: '100vh', overflowY: 'scroll'}} className="ba-layout--custom">
           <Header style={{padding: 0}}>
             <GlobalHeader
               logo={logo}
@@ -194,11 +215,30 @@ class BasicLayout extends React.PureComponent {
               onNoticeVisibleChange={this.handleNoticeVisibleChange}
             />
           </Header>
-          <Content>
-
+          <Content className={contentCls}>
+            <Switch>
+              {
+                redirectData.map(item =>
+                  <Redirect key={item.from} exact from={item.from} to={item.to}/> 
+                )
+              }
+              {
+                getRoutes(match.path, routerData).map(item => (
+                  <AuthorizedRoute
+                    key={item.key}
+                    path={item.path}
+                    component={item.component}
+                    exact={item.exact}
+                    authority={item.authority}
+                    redirectPath="/exception/403"
+                  />
+                ))
+              }
+              <Redirect exact from="/" to={bashRedirect}/>
+            </Switch>
           </Content>
-          <Footer>
-
+          <Footer style={{padding: 0}}>
+            <GlobalFooter copyright={copyright}/>  
           </Footer>
         </Layout>
       </Layout>

@@ -153,7 +153,7 @@ export default class GlobalHeader extends PureComponent{
             >
               <span className="header-account" >
                 <Avatar size="small" className="header-avatar" src={currentUser.avatar} />
-                <span className="header-name">{currentUser.name} <icon className={`iconfont icon-down`} /></span>
+                <span className="header-name">{currentUser.name} <i className={`iconfont icon-down`} /></span>
               </span>  
             </Dropdown>    
           ) : <Spin size="small" className="header-account-spin" />}

@@ -1,0 +1,158 @@
+.standard-table .ant-table{
+  font-family: "Chinese Quote", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  color: #8d8d8d;
+  font-weight: lighter;
+  border-radius: 2px 2px 0 0;
+  box-shadow: rgba(170, 170, 170, 0.1) 0px 5px 10px 0px;
+}
+
+.standard-table .ant-table table {
+  border-radius: 2px 2px 0 0;
+}
+
+.standard-table .ant-table-thead > tr > th {
+  background: #fff;
+  color: #838383;
+  font-size: 14px;
+  font-weight: 500;
+  border-bottom: 0px;
+}
+
+.standard-table .ant-table-thead > tr > th .anticon-filter,
+.standard-table .ant-table-thead > tr > th .ant-table-filter-icon {
+  color: #838383;
+}
+
+.standard-table .ant-table-thead > tr > th .ant-table-filter-selected.anticon-filter {
+  color: #5eb870;
+}
+
+.standard-table .ant-table-tbody > tr > td {
+  border-bottom: 0px;
+}
+
+.standard-table .ant-table-tbody > tr:nth-of-type(odd) > td {
+  background: #f9f9f9;
+}
+
+.standard-table .ant-table-tbody > tr:nth-of-type(even) > td {
+  background: #fff;
+}
+
+.standard-table .ant-table-thead > tr.ant-table-row-hover > td,
+.standard-table .ant-table-tbody > tr.ant-table-row-hover > td,
+.standard-table .ant-table-thead > tr:hover > td,
+.standard-table .ant-table-tbody > tr:hover > td {
+  background-color: #f0f0f0;  
+}
+
+.standard-table .ant-table-tbody > tr.ant-table-row-selected td {
+  background: #f0f0f0;
+}
+
+.standard-table .ant-table-column-sorter-up:hover .anticon,
+.standard-table .ant-table-column-sorter-down:hover .anticon {
+  color: #8d8d8d;
+}
+
+.standard-table .ant-table-column-sorter-up.on .anticon-caret-up,
+.standard-table .ant-table-column-sorter-down.on .anticon-caret-up,
+.standard-table .ant-table-column-sorter-up.on .anticon-caret-down,
+.standard-table .ant-table-column-sorter-down.on .anticon-caret-down {
+  color: #5eb870;
+}
+
+.standard-table .ant-table-filter-dropdown {
+  border-radius: 2px;
+}
+
+.standard-table .ant-table-filter-dropdown .ant-dropdown-menu {
+  border: 0;
+  border-radius: 2px 2px 0 0;
+}
+
+.standard-table .ant-table-filter-dropdown .ant-dropdown-menu-item {
+  font-size: 12px;
+  color: #8d8d8d;
+  line-height: 20px;
+}
+
+.standard-table .ant-table-filter-dropdown .ant-dropdown-menu-item:first-child {
+  border-radius: 2px 2px 0 0;
+}
+
+.standard-table .ant-table-filter-dropdown .ant-dropdown-menu-item:hover {
+  background: #f0f0f0;
+}
+
+.standard-table .ant-dropdown-menu-item-selected{
+  background: #f0f0f0;
+}
+
+.standard-table .ant-table-filter-dropdown-btns {
+  border-top: 1px solid #f3f3f3;
+  padding: 7px 10px;
+  font-size: 13px;
+}
+
+.standard-table .ant-table-filter-dropdown-link {
+  color: #7297ff;
+}
+.standard-table .ant-table-filter-dropdown-link:hover {
+  color: #8ba9ff;
+}
+.standard-table .ant-table-filter-dropdown-link:active {
+  color: #527ffd;
+}
+
+.standard-table .ant-checkbox-checked .ant-checkbox-inner, 
+.standard-table .ant-checkbox-indeterminate .ant-checkbox-inner {
+  background-color: #5eb870;
+  border-color: #5eb870;
+}
+
+.standard-table .ant-checkbox-wrapper:hover .ant-checkbox-inner, 
+.standard-table .ant-checkbox:hover .ant-checkbox-inner, 
+.standard-table .ant-checkbox-input:focus + .ant-checkbox-inner {
+  border-color: #5eb870;
+}
+
+.standard-table-popover.ant-popover {
+  padding-right: 0;
+}
+
+.standard-table-popover .ant-popover-arrow {
+  display: none;
+}
+
+.standard-table-popover .ant-popover-inner-content {
+  padding: 0;
+  color: #8d8d8d;
+}
+
+.standard-table-popover .ant-popover-inner-content .ant-menu {
+  border: 0px;
+}
+
+.standard-table-popover .ant-popover-inner-content .ant-menu-item {
+  font-size: 12px;
+  color: #8d8d8d;
+  text-align: center;
+  margin: 0;
+  padding: 4px 8px;
+  height: 28px;
+  line-height: 20px;
+}
+
+.standard-table-popover .ant-popover-inner-content .ant-menu-item:hover {
+  color: rgba(0, 0, 0, .65);
+}
+
+.standard-table-popover .ant-popover-inner-content .ant-menu-item:active {
+  background: #f0f0f0;
+}
+
+.standard-table-popover .ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
+  background: #f0f0f0;
+}

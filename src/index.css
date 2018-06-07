@@ -20,16 +20,42 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.ba-global-add-btn.ant-btn {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  padding: 0;
+  color: #fff;
+  background-color: #5eb870;
+  border: 0px ;
+  box-shadow: 2px 5px 10px 0px rgba(170,170,170,.4);
+}
+.ba-global-add-btn.ant-btn:hover,
+.ba-global-add-btn.ant-btn:focus {
+  background-color: #7bcc8b;
+  color: #fff;
+}
+
+.ba-global-add-btn.ant-btn:active {
+  background-color: #53a563;
+  color: #fff;
+}
+.ba-global-add-btn.ant-btn-clicked:after {
+  border: 0 solid #5eb870;
+}
+
 /*layout*/
 .ba-layout--custom.ant-layout {
   min-height: 100%;
   background: #f8f8f8;
 }
 .ba-layout--custom.ant-layout .ant-layout-header,
-.ba-layout--custom.ant-layout .ant-layout-footer,
 .ba-layout--custom.ant-layout .ant-layout-sider
 {
   background: #fff;
+}
+.ba-layout--custom.ant-layout .ant-layout-footer {
+  background: #f8f8f8;
 }
 /*layout*/
 
@@ -51,3 +77,162 @@ body {
   font-weight: 500;
 }
 /*tabs*/
+
+/*breadcrumb*/
+.ba-breadcrumb--custom.ant-breadcrumb {
+  color: #8d8d8d;
+  font-size: 13px;
+}
+/*breadcrumb*/
+
+/*progress*/
+.ba-progress--custom .ant-progress-inner {
+  background-color: #dbdbdb;
+}
+/*progress*/
+
+/*button*/
+.ba-btn--custom.ant-btn {
+  font-size: 12px;
+  /*font-weight: 300;*/
+  border-radius: 2px;
+  color: #8d8d8d;
+  border-color: #d2d2d2;
+}
+
+.ba-btn--custom.ant-btn .iconfont {
+  font-size: 12px;
+}
+
+.ba-btn--custom.ant-btn:hover,
+.ba-btn--custom.ant-btn:focus {
+  color: #5193cd;
+  background-color: #fff;
+  border-color: #6fb1eb;
+}
+
+.ba-btn--custom.ant-btn:active,
+.ba-btn--custom.ant-btn.active {
+  color: #096dd9;
+  background-color: #fff;
+  border-color: #096dd9;
+}
+
+.ba-btn--custom.ant-btn-primary {
+  color: #fff;
+  background-color: #7297ff;
+  border-color: #7297ff;
+}
+
+.ba-btn--custom.ant-btn-primary:hover,
+.ba-btn--custom.ant-btn-primary:focus {
+  color: #fff;
+  background-color: #8ba9ff;
+  border-color: #8ba9ff;
+}
+
+.ba-btn--custom.ant-btn-primary:active,
+.ba-btn--custom.ant-btn-primary.active {
+  color: #fff;
+  background-color: #527ffd;
+  border-color: #527ffd;
+}
+/*button*/
+
+/*radio*/
+.ba-radio--custom.ant-radio-group {
+  font-size: 12px;
+  color: #8d8d8d;
+  /*font-weight: 300;*/
+}
+
+.ba-radio--custom .ant-radio-button-wrapper  {
+  color: #8d8d8d;
+  border: 1px solid #d2d2d2;
+  /*font-weight: 300;*/
+  border-left: 0;
+  border-top-width: 1.02px;
+}
+
+.ba-radio--custom  .ant-radio-button-wrapper:first-child {
+  border-radius: 2px 0 0 2px;
+  border-left: 1px solid #d2d2d2;
+}
+
+.ba-radio--custom .ant-radio-button-wrapper:last-child {
+  border-radius: 0 2px 2px 0;
+}
+
+.ba-radio--custom .ant-radio-button-wrapper:first-child:last-child {
+  border-radius: 2px;
+}
+
+.ba-radio--custom .ant-radio-button-wrapper:hover,
+.ba-radio--custom .ant-radio-button-wrapper-focused {
+  color: #68adec;
+  position: relative;
+}
+
+.ba-radio--custom .ant-radio-button-wrapper-checked {
+  background: #fff;
+  border-color: #68adec;
+  color: #68adec;
+  -webkit-box-shadow: -1px 0 0 0 #68adec;
+          box-shadow: -1px 0 0 0 #68adec;
+  z-index: 1;
+}
+
+.ba-radio--custom .ant-radio-button-wrapper-checked:first-child {
+  border-color: #68adec;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+.ba-radio--custom .ant-radio-button-wrapper-checked:hover {
+  border-color: #79b4ea;
+  -webkit-box-shadow: -1px 0 0 0 #79b4ea;
+          box-shadow: -1px 0 0 0 #79b4ea;
+  color: #79b4ea;
+}
+.ba-radio--custom .ant-radio-button-wrapper-checked:active {
+  border-color: #4e9ee6;
+  -webkit-box-shadow: -1px 0 0 0 #4e9ee6;
+          box-shadow: -1px 0 0 0 #4e9ee6;
+  color: #4e9ee6;
+}
+/*radio*/
+
+/*tag*/
+.ba-tag--custom.ant-tag {
+  font-size: 10px;
+  -webkit-transform-origin: 0 50%;
+     -moz-transform-origin: 0 50%;
+      -ms-transform-origin: 0 50%;
+       -o-transform-origin: 0 50%;
+          transform-origin: 0 50%;
+          transform: scale(0.90);
+      -ms-transform: scale(0.90);
+     -moz-transform: scale(0.90); 	
+  -webkit-transform: scale(0.90); 
+       -o-transform: scale(0.90);
+  color: #8d8d8d;
+  padding: 0 12px;
+  height: 24px;
+  line-height: 22px;
+  border-radius: 15px;
+}
+
+.ba-tag--custom.ant-tag.ant-tag-has-color,
+.ba-tag--custom.ant-tag.ant-tag-has-color a,
+.ba-tag--custom.ant-tag.ant-tag-has-color a:hover,
+.ba-tag--custom.ant-tag.ant-tag-has-color .anticon-cross,
+.ba-tag--custom.ant-tag.ant-tag-has-color .anticon-cross:hover {
+  color: #fff;
+}
+/*tag*/
+
+/*modal*/
+.ba-modal--custom {
+  
+}
+/*modal*/

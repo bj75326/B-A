@@ -10,12 +10,17 @@ import {getMenuData} from './menu';
 
 let routerDataCache;
 
-const modelNotExisted = (app, model) => (
+const modelNotExisted = (app, model) => {
   //eslint-disable-next-line
-  !app._models.some(({namespace}) => {
+  console.log('!!!!!!!!!', model);
+  //eslint-disable-next-line
+  const a = !app._models.some(({namespace}) => {
     return namespace === model.substring(model.lastIndexOf('/') + 1);
-  })
-);
+  });
+  
+  console.log('!!!!!!!!!!!!', a);
+  return a;
+};
 
 //wrapper of dva/dynamic
 const dynamicWrapper = (app, models, component) => {
@@ -80,6 +85,9 @@ export const getRouterData = app => {
     },
     '/dashboard': {
       component: dynamicWrapper(app, [], () => import('../routes/Dashboard/Dashboard')),
+    },
+    '/task': {
+      component: dynamicWrapper(app, ['task'], () => import('../routes/Task/TaskList')),
     },
     '/user': {
       component: dynamicWrapper(app, [], () => import('../layouts/UserLayout')),

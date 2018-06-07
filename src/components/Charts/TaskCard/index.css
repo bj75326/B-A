@@ -1,0 +1,36 @@
+.task-card {
+
+}
+
+.task-card-title {
+  font-size: 15px;
+  color: #8d8d8d;
+  font-weight: 300;
+  padding-bottom: 6px;
+}
+
+.task-card-content {
+  display: flex;
+  align-items: center;
+}
+
+.task-card-number {
+  font-size: 20px;
+  color: #838383;
+  font-weight: bolder;
+}
+
+.task-card-progress {
+  flex: 1;
+  padding: 0 10px 0 20px;
+}
+
+.task-card-progress.task-card-bg-green .ant-progress-bg{
+  background-color: #5eb870;
+}
+.task-card-progress.task-card-bg-yellow .ant-progress-bg{
+  background-color: #ffa854;
+}
+.task-card-progress.task-card-bg-red .ant-progress-bg{
+  background-color: #ff4805;
+}

@@ -1,7 +1,7 @@
 
 import mockjs from 'mockjs';
 import {format, delay} from 'roadhog-api-doc';
-import {getActivities, getNotice, getFakeList} from './mock/api';
+import {getFakeTickets} from './mock/api';
 import {getNotices, getNotices1} from './mock/notices';
 
 //是否禁用代理
@@ -39,8 +39,8 @@ const proxy = {
     age: 32,
     address: 'Sidney No. 1 Lake Park',
   }],
-  'GET /api/project/notice': getNotices,
-  'GET /api/activities': getActivities,
+  //'GET /api/project/notice': getNotices,
+  //'GET /api/activities': getActivities,
   
   'POST /api/forms': (req, res) => {
     res.send({ message: 'Ok' });
@@ -48,7 +48,16 @@ const proxy = {
   'GET /api/tags': mockjs.mock({
     'list|100': [{ name: '@city', 'value|1-100': 150, 'type|0-2': 1 }]
   }),
-  'GET /api/fake_list': getFakeList,
+  //'GET /api/fake_list': getFakeList,
+  'GET /api/fake_tickets': getFakeTickets,
+  'GET /api/fake_task_staistics': (req, res) => {
+    res.send({
+      all: 24,
+      finished: 12,
+      holded: 6,
+      terminated: 6,  
+    });
+  },
   
   'POST /api/login/account': (req, res) => {
     const { password, userName, type } = req.body;
